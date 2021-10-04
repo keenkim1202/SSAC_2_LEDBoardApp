@@ -39,6 +39,12 @@ class BoardViewController: UIViewController {
     
     // user InputView
     userInputView.layer.cornerRadius = CGFloat(8)
+    
+    // resultLabel
+    resultLabel.font = .systemFont(ofSize: 130)
+    resultLabel.textAlignment = .center
+    resultLabel.textColor = .cyan
+    resultLabel.adjustsFontSizeToFitWidth = true
   }
   
   func setBorder(_ buttons: [UIButton]) {
@@ -51,6 +57,8 @@ class BoardViewController: UIViewController {
  
   // MARK: Actions
   @IBAction func onSend(_ sender: UIButton) {
+    resultLabel.text = userTextField.text
+    userTextField.text = ""
   }
   
   @IBAction func onTextColorChange(_ sender: UIButton) {
