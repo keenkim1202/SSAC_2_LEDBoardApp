@@ -29,6 +29,9 @@
                                         <rect key="frame" x="241.5" y="9.5" width="57.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                        <connections>
+                                            <action selector="onSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PyL-K0-LVC"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="텍스트를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4A2-uQ-QQd">
                                         <rect key="frame" x="8" y="8" width="225.5" height="34"/>
@@ -39,6 +42,9 @@
                                         <rect key="frame" x="307" y="9.5" width="59" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Color"/>
+                                        <connections>
+                                            <action selector="onTextColorChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QL2-52-V2B"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,6 +72,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MtV-e9-vv1" secondAttribute="bottom" constant="16" id="iaj-bt-BFl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="MtV-e9-vv1" id="zxP-Qo-iYq"/>
+                        <outlet property="sendButton" destination="bMx-rQ-b00" id="elk-Qj-bWR"/>
+                        <outlet property="textColorButton" destination="pnY-Xd-UdP" id="doh-IO-97f"/>
+                        <outlet property="userInputView" destination="6kw-Ey-MK5" id="GVS-n3-dPf"/>
+                        <outlet property="userTextField" destination="4A2-uQ-QQd" id="Iel-V7-6Ks"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
