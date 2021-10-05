@@ -15,6 +15,9 @@ class BoardViewController: UIViewController {
   @IBOutlet weak var sendButton: UIButton!
   @IBOutlet weak var textColorButton: UIButton!
   
+  // MARK: Properties
+  let colors: [UIColor] = [.red, .cyan, .yellow, .systemGreen, .systemTeal, .systemPink, .orange]
+  
   // MARK: View Life-Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -62,6 +65,12 @@ class BoardViewController: UIViewController {
   }
   
   @IBAction func onTextColorChange(_ sender: UIButton) {
+    let resultTextColor = resultLabel.textColor
+    var nextTextColor = colors.randomElement()
+    while resultTextColor == nextTextColor {
+      nextTextColor = colors.randomElement()
+    }
+    resultLabel.textColor = nextTextColor
   }
   
 }
