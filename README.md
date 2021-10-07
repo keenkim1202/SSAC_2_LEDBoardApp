@@ -6,8 +6,8 @@ LED 전광판앱입니다. 입력한 텍스트를 LED전광판처럼 크게 출�
 - [x] '보내기'버튼을 클릭하면 textField의 text가 화면 가운데 있는 label에 보여지도록 하기
 - [x] label의 폰트 크기느 텍스틍 길이에 따라 달라지도록 하기
 - [x] 'Aa'버튼으 클릭하면 label의 textColor가 랜덤으로 변하도록 하기
-- [ ] tapGesture를 통해 상단 view 전체를 숨겼다 보였다 하기
-- [ ] tapGesture를 통해 키보드가 올라와있을 때 키보드르 내려주도록 하기
+- [x] tapGesture를 통해 상단 view 전체를 숨겼다 보였다 하기
+- [x] tapGesture를 통해 키보드가 올라와있을 때 키보드르 내려주도록 하기
 
 |참조 이미지|구성 완료 이미지|
 |:---:|:---:|
@@ -16,3 +16,6 @@ LED 전광판앱입니다. 입력한 텍스트를 LED전광판처럼 크게 출�
 
 # 실행 화면
 <p align="center"> <img width="50%" src="https://user-images.githubusercontent.com/59866819/136341706-6b23c4a7-8f33-406d-b528-dcb7c72ea24a.mp4" /> <p>
+
+# 키보드 내리기 및 상단 view 숨기기
+<p align="center"> <img width="50%" src="https://user-images.githubusercontent.com/59866819/136346243-63773242-00c6-4abc-be3d-9f9e5bb65b57.mp4" /> <p>
