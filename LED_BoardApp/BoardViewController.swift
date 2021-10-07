@@ -15,6 +15,8 @@ class BoardViewController: UIViewController {
   @IBOutlet weak var sendButton: UIButton!
   @IBOutlet weak var textColorButton: UIButton!
   
+  
+  
   // MARK: Properties
   let colors: [UIColor] = [.red, .cyan, .yellow, .systemGreen, .systemTeal, .systemPink, .orange]
   
@@ -62,6 +64,7 @@ class BoardViewController: UIViewController {
   @IBAction func onSend(_ sender: UIButton) {
     resultLabel.text = userTextField.text
     userTextField.text = ""
+    view.endEditing(true)
   }
   
   @IBAction func onTextColorChange(_ sender: UIButton) {
@@ -71,6 +74,20 @@ class BoardViewController: UIViewController {
       nextTextColor = colors.randomElement()
     }
     resultLabel.textColor = nextTextColor
+  }
+  
+  @IBAction func onKeyboardReturned(_ sender: UITextField) {
+    view.endEditing(true)
+  }
+  
+  @IBAction func onViewTapped(_ sender: UITapGestureRecognizer) {
+    view.endEditing(true)
+    
+    if userInputView.isHidden {
+      userInputView.isHidden = false
+    } else {
+      userInputView.isHidden = true
+    }
   }
   
 }
