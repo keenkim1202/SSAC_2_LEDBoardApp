@@ -15,7 +15,7 @@ LED 전광판앱입니다. 입력한 텍스트를 LED전광판처럼 크게 출�
   
 
 # 실행 화면
-<p align="center"> <img width="50%" src="https://user-images.githubusercontent.com/59866819/136341706-6b23c4a7-8f33-406d-b528-dcb7c72ea24a.mp4" /> <p>
+https://user-images.githubusercontent.com/59866819/136341706-6b23c4a7-8f33-406d-b528-dcb7c72ea24a.mp4
 
 # 키보드 내리기 및 상단 view 숨기기
-<p align="center"> <img width="50%" src="https://user-images.githubusercontent.com/59866819/136346243-63773242-00c6-4abc-be3d-9f9e5bb65b57.mp4" /> <p>
+https://user-images.githubusercontent.com/59866819/136346243-63773242-00c6-4abc-be3d-9f9e5bb65b57.mp4
